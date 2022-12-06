@@ -3,7 +3,7 @@ import java.io.File
 fun main() {
     // pt1
     val input = File("src/main/resources/day4.txt").readText()
-    println(input.split('\n').count {
+    println(input.lines().count {
         val (one, two) = it.split(',')
         val (oneS, oneE) = one.split('-')
         val (twoS, twoE) = two.split('-')
